@@ -44,10 +44,10 @@ https://langbase.com/luisvalgoi/faqs-generator
 
 # Running App Flow
 
-- `cd agents && npx baseai@latest dev`: Spinning up the Server Agents.
+- `npx baseai@latest dev`: Spinning up the Server Agents.
 
-- `cd agents && npx tsx index-rag.ts`: Running the Server Agents with a minimal RAG example.
+- `npx tsx index-rag.ts`: Running the Server Agents with a minimal RAG example.
 
-- `cd client && npm run dev`: Running the client pointing to the deployed langbase pipe.
+- `npm run dev`: Running the client pointing to the deployed langbase pipe.
 
 - `ollama run deepseek-r1:7b`: Run Ollama Model: If you want to bind the Server Agents with a local model.
