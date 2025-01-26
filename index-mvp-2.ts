@@ -21,13 +21,13 @@ async function main() {
   runner.on('connect', () => {
     console.log('Stream started.\n')
   })
-  runner.on('content', (content) => {
+  runner.on('content', (content: any) => {
     process.stdout.write(content)
   })
   runner.on('end', () => {
     console.log('\nStream ended.')
   })
-  runner.on('error', (error) => {
+  runner.on('error', (error: any) => {
     console.error('Error:', error)
   })
 }

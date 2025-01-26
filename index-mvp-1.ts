@@ -24,7 +24,7 @@ async function main() {
     console.log('Stream started.\n')
   })
 
-  runner.on('content', (content) => {
+  runner.on('content', (content: any) => {
     process.stdout.write(content)
   })
 
@@ -32,7 +32,7 @@ async function main() {
     console.log('\nStream ended.')
   })
 
-  runner.on('error', (error) => {
+  runner.on('error', (error: any) => {
     console.error('Error:', error)
   })
 }
